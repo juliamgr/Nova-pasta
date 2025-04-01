@@ -1,7 +1,22 @@
-.acende{
-    background-color: yellow;
+#ligado {
+    background-color: greenyellow;
+    border: none;
+    width: 70px;
+    height: 20px;
 }
 
-.apaga{
-    background-color: gray;
+#desligado {
+    background-color: rgb(239, 4, 4);
+    border: none;
+    width: 70px;
+    height: 20px;
+}
+
+.lampada {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border: 1px solid black;
+    
+    margin: auto;
 }
