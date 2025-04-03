@@ -1,0 +1,23 @@
+#contador{
+    font-size: 2rem;
+    margin: 20px;
+}
+
+#aumentar{
+    background-color: aqua;
+    color: white;
+}
+
+#diminuir{
+    background-color: blueviolet;
+    color: white;
+}
+
+.botao{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
