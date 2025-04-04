@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: cornflowerblue;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.calculator {
+    background-color: #312e2e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2325222a' fill-opacity='0.8' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    border-radius: 20px;
+    padding: 20px;
+    width: 320px;
+
+}
+
+#display {
+    background-color: #444444;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2em;
+    height: 60px;
+    overflow: hidden;
+
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #a0a0a0;
+    transition: all 0.2s;
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+   
+
+}
+
+button:hover {
+    background-color: #9e6a77;
+
+}
+
+.operator {
+    background-color: #c03b4c;
+    color: white;
+
+}
+
+.operator:hover {
+    background-color: #b3142f;
+
+}
+
+.equals {
+    background-color: #60b882;
+    color: white;
+    grid-column: span 1;
+
+}
+
+button[onclick*="appendToDisplay('0')"] {
+    grid-column: span 2;
+
+}
